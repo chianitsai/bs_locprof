@@ -5,9 +5,9 @@ print("Working on directory: "+dir);
 dir_p=dir+File.separator+"processed";
 File.makeDirectory(dir_p);
 
-number=newArray("1639");
-match=".*5s.*nd2.*";
-max="750";
+number=newArray("1756","2182","2286","2287","2288","2290");
+match=".*2h_5s.*";
+max="250";
 
 setBatchMode(true);
 for (n = 0; n < number.length; n++) {

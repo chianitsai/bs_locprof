@@ -1,6 +1,6 @@
 function [ PolarLoc, BootPolarLoc, MedianPolarLoc, CIPolarLoc, Polarisation, MedianPolarisation, NbCells, PoleInt] = polarRatios2( Profiles, CellWidths, CellLengths, k, BootN, normalize, ratio_max, PixSize, mean_min, RefCytoNorm)
 
-    load('functions\ReferenceCytoplasmicCurve.mat');
+    load('/Volumes/Gani_sv_WS/git/bs_locprof/Functions/ReferenceCytoplasmicCurve.mat');
 
     NbCells=size(Profiles,1);
     todel=[];

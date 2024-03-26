@@ -31,8 +31,8 @@ if ~only_plot
     k=linspace(0,1,NbUpSamples); %k is a ordered vector from 1 to 200
     lengthTH = 5;
     cutup = 1; % if 1 analyses cells BELOW "lengthTH"reshold, if 0 analyses cells above threshold
-    CellLengthLiq=lengthTH; % in µm;
-    CellLengthSol=lengthTH; % in µm;
+    CellLengthLiq=lengthTH; % in Âµm;
+    CellLengthSol=lengthTH; % in Âµm;
     BootN=300;
 
     % load functions
@@ -617,7 +617,7 @@ end
 %          end
 %     end
 %     axis([0 x_max y_min y_max])
-%     xlabel('Cell Length (µm)');
+%     xlabel('Cell Length (Âµm)');
 %     ylabel('Absolute Polar Intensity');
 %     title(strcat(string(MegaStruct.(char(Pil_type)).full_name)," - Bright Pole"), 'Interpreter', 'none');   
 % end
@@ -648,7 +648,7 @@ end
 %          end
 %     end
 %     axis([0 x_max y_min y_max])
-%     xlabel('Cell Length (µm)');
+%     xlabel('Cell Length (Âµm)');
 %     ylabel('Absolute Polar Intensity');
 %     title(strcat(string(MegaStruct.(char(Pil_type)).full_name)," - Dim Pole"), 'Interpreter', 'none');  
 % end

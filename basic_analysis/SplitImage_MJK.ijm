@@ -4,9 +4,9 @@ print("Working on directory: "+dir);
 dir_p=dir+File.separator+"processed";
 File.makeDirectory(dir_p);
 
-number=newArray("1634","1635");
+number=newArray("1756","2182","2286","2287","2288","2290");
 match=".*still.*";
-max="750";
+max="250";
 
 setBatchMode(true);
 for (n = 0; n < number.length; n++) {
