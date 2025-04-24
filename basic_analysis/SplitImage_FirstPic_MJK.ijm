@@ -5,7 +5,9 @@ print("Working on directory: "+dir);
 dir_p=dir+File.separator+"processed";
 File.makeDirectory(dir_p);
 
-number=newArray("1756","2182","2286","2287","2288","2290");
+// number=newArray("1756","2582","2587","2588","2589","2590");
+//number=newArray("1756","2581","2583","2584","2585","2586");
+number=newArray("1756","2468","2471","2566");
 match=".*2h_5s.*";
 max="250";
 

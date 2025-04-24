@@ -1,12 +1,13 @@
 %% Modify as wanted
 clear all
+close all
 
 strainFolder = 'CyaB'; % IMPORTANT!!! must match exactly the folder name, folder must contains "data" and "final_figure" folder, "data" must contain "Input_Profile_Analysis.xlsx"
 fluo = 'mNeonGreen'; % IMPORTANT!!! must match exactly what was entered in BacStalk
 % fluo = 'mScarletI'; % IMPORTANT!!! must match exactly what was entered in BacStalk
 
 only_plot = 0;
-load_name = 'Data_20230804_Strains_1756_1790_mNeonGreen'; % 'Data_Name' no .mat at the end
+load_name = 'Data_20241002_Strains_1756_2582_2588_2589_mNeonGreen'; % 'Data_Name' no .mat at the end
 dir_data=strcat("/Volumes/Gani_sv_WS/bs_locprof_data_storage/",strainFolder);
 dir_save_mat = strcat("/Volumes/Gani_sv_WS/bs_locprof_data_storage/",strainFolder,"/mat");
 dir_save_graph = strcat("/Volumes/Gani_sv_WS/bs_locprof_results/",strainFolder);
@@ -15,8 +16,8 @@ dir_save_graph = strcat("/Volumes/Gani_sv_WS/bs_locprof_results/",strainFolder);
 dir_func = '/Volumes/Gani_sv_WS/git/bs_locprof/Functions';
 addpath(dir_func);
 
-do_save = 1; % if 0 doesn't save graphs
-do_violin = 0; % Note, doesn't work after using BacStalk. Restart Matlab!
+do_save = 1;% if 0 doesn't save graphs
+do_violin = 1; % Note, doesn't work after using BacStalk. Restart Matlab!
 
 %% Compute profiles and save
 if ~only_plot
@@ -495,7 +496,7 @@ figure('units','normalized','outerposition',[0 0 1 1])
 counter=0;
 
 y_min = 0.5;
-y_max = 0.7;
+y_max = 0.6;
 
 % plot for individual conditions
 for cond = 1:nbr_conditions
